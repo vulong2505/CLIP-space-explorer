@@ -37,6 +37,14 @@ The tool visualizes CLIP's latent space representation by:
 - Strongly recommended to have at least 16GB RAM (**recommended due to CLIP embeddings size**)
 - All other RAM resource intensive programs closed, e.g., the 47 chrome tabs for your other work 😅.
 
+### Git LFS
+
+The available json file is large so `git lfs` is used to store it in GitHub. If you don't have `git lfs` on your computer, install it using the following:
+
+```bash
+git lfs install
+```
+
 ### Backend Setup
 
 1. Navigate to the backend directory to install dependencies:
