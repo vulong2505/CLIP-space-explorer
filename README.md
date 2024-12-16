@@ -81,7 +81,7 @@ cd backend
 2. Create and activate virtual environment:
 ```bash
 # Create and activate virtual environment
-python -m venv venv
+py -m venv venv
 # On Windows:
 venv\Scripts\activate
 # On Unix or MacOS:
@@ -95,12 +95,17 @@ pip install -r requirements.txt
 
 ### Frontend Setup
 
-1. Navigate to the frontend directory to install dependencies:
+1. You can skip this step if you already have Node.js and yarn installed. Otherwise, download [Node.js](https://nodejs.org/en) and then install yarn globally:
+```bash
+npm install --global yarn
+```
+
+2. Navigate to the frontend directory to install dependencies:
 ```bash
 cd frontend
 ```
 
-2. Install Node.js dependencies:
+1. Install Node.js dependencies:
 ```bash
 yarn
 ```
@@ -109,10 +114,14 @@ yarn
 
 1. Start the backend server:
 ```bash
+# (If you're already in the virtual env, ignore this step)
+# venv\Scripts\activate # for Windows
+# source venv/bin/activate  # for Unix or MacOS
+
 # Starting from root directory, go into the backend directory
 cd backend
 # Start backend server
-python app.py
+py app.py
 ```
 
 Wait for the **"Finished loading CLIP pairs. Server is up and running."** message.
@@ -127,7 +136,7 @@ yarn dev
 
 3. In the terminal for the frontend, open the URL shown in the terminal (it might be http://localhost:5173 if the default vite port is open). Refer to the image below to find the link after running `yarn dev`:
 
-![example-yarn-url](readme_data\example_yarn_url.png)
+<img src="readme_data\example_yarn_url.png" alt="Example successful yarn run.">
 
 ## Create a new set of points for visualization
 
