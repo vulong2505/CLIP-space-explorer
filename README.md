@@ -2,6 +2,17 @@
 
 Interactive 3D visualization tool that explores how the Contrastive Language-Image Pretraining ([CLIP](https://arxiv.org/pdf/2103.00020) [[code]](https://github.com/openai/CLIP)) AI model understands relationships between images and text. 
 
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Setup Instructions](#setup-instructions)
+  - [Prerequisites](#prerequisites)
+  - [Git LFS](#git-lfs)
+  - [Backend Setup](#backend-setup)
+  - [Frontend Setup](#frontend-setup)
+- [Running the Application](#running-the-application)
+- [Create a New Set of Points for Visualization](#create-a-new-set-of-points-for-visualization)
+
 ## Overview
 
 <div align="center">
@@ -39,11 +50,25 @@ The tool visualizes CLIP's latent space representation by:
 
 ### Git LFS
 
-The available json file is large so `git lfs` is used to store it in GitHub. If you don't have `git lfs` on your computer, install it using the following:
+1. The available json file is large so `git lfs` is used to store it in GitHub. If you don't have `git lfs` on your computer, install it using the following:
 
 ```bash
 git lfs install
 ```
+
+2. After turning on `git lfs`, clone the repo as usual.
+
+```bash
+git clone https://github.com/vulong2505/CLIP-space-explorer.git
+```
+
+3. If you already cloned the repo before turning on `git lfs`. Then install it and run the below line:
+
+```bash
+git lfs pull
+```
+
+4. In the case that you can't download the json file via `git clone`, you can download it externally. Download from the json from [my external Drive folder](https://drive.google.com/drive/folders/1aZ25O4jkmUvUDBx678DpgFS-Vi20wMC2?usp=sharing) and move the json file to `backend/data/pairs_5K_UMAPn30.json`.
 
 ### Backend Setup
 
